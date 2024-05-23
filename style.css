@@ -1,0 +1,64 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.logo-container img,
+.icons-container img {
+    width: 24px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Styles pour le logo */
+.logo-container {
+    order: 1;
+}
+
+/* Styles pour les icônes */
+.icons-container {
+    order: 2;
+}
+
+/* Styles pour le contenu principal */
+.main {
+    padding: 20px;
+}
+
+.large-table {
+    width: 100%;
+    border-collapse: separate;
+}
+
+.large-table td {
+    border: none;
+    padding: 0;
+    text-align: center;
+}
+
+.mini-tableau {
+    display: inline-block;
+    width: calc(15% - 10px);
+    height: 150px;
+    border: 150px solid #ddd;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.mini-tableau h2 {
+    margin: 0;
+    margin-bottom: 5px;
+}
