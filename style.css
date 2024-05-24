@@ -1,21 +1,80 @@
 /* Styles généraux */
 body {
+    background: linear-gradient(to left, #002968, #0050CE);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
+/* Style pour le conteneur principal */
+.main {
+    width: 1000px;
+    height: max-content;
+    margin: auto;
+    background-color: aqua;
+    border-radius: 40px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/* Style des lignes */
+.ligne1, .ligne2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Style des sections */
+.ligne1 > div, .ligne2 > div {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    background-color: rgb(197, 211, 212);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.ligne1 > div:hover, .ligne2 > div:hover {
+    transform: translateY(-5px);
+}
+
+/* Style des images dans les sections */
+.ligne1 > div img, .ligne2 > div img {
+    margin-bottom: 10px;
+    width: 24px;
+    height: auto;
+}
+
+/* Style des liens */
+.ligne1 > div a, .ligne2 > div a {
+    text-decoration: none;
+    color: #2e3a59;
+    font-weight: bold;
+}
+
+.ligne1 > div a:hover, .ligne2 > div a:hover {
+    color: #1d2a45;
+}
+
+/* Style de l'en-tête */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #dabbbb;
+    background-color:transparent;
 }
 
 .logo-container img,
 .icons-container img {
-    width: 24px;
+    width: 50px;
     height: auto;
     margin-right: 10px;
 }
@@ -28,13 +87,21 @@ header {
 /* Styles pour les icônes */
 .icons-container {
     order: 2;
+    display: flex;
+    align-items: center;
+   
 }
 
-/* Styles pour le contenu principal */
-.main {
-    padding: 20px;
+.icons-container img {
+    background-color: #F6CB65;
+    border-radius: 50%;
+}
+.icons-container .icon {
+    margin-left: 15px;
+    cursor: pointer;
 }
 
+/* Style pour la table large */
 .large-table {
     width: 100%;
     border-collapse: separate;
@@ -46,6 +113,7 @@ header {
     text-align: center;
 }
 
+/* Style pour les mini-tableaux */
 .mini-tableau {
     display: inline-block;
     width: calc(15% - 10px);
