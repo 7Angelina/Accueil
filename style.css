@@ -9,13 +9,13 @@ body {
 
 /* Style pour le conteneur principal */
 .main {
-    width: 1000px;
+    width: max-content;
     height: max-content;
     margin: auto;
-    background-color: aqua;
+    background-color:  #033c98;
     border-radius: 40px;
     margin-top: 30px;
-    padding: 20px;
+    padding: 30px;
 }
 
 /* Style des lignes */
@@ -27,10 +27,10 @@ body {
 
 /* Style des sections */
 .ligne1 > div, .ligne2 > div {
-    width: 200px;
+    width: 230px;
     height: 200px;
     padding: 5px;
-    background-color: rgb(197, 211, 212);
+    background-color:  #6d96dc57;
     margin: 10px;
     display: flex;
     align-items: center;
@@ -43,6 +43,7 @@ body {
 
 .ligne1 > div:hover, .ligne2 > div:hover {
     transform: translateY(-5px);
+    background-color: #2b69cc;
 }
 
 /* Style des images dans les sections */
